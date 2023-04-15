@@ -1,5 +1,8 @@
 {
+  "homepage": "https://AngieMorenoOrtega.github.io/instalacion-de-webpack-y-babel",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "webpack --mode development",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --open",
@@ -12,12 +15,9 @@
     "@babel/preset-env": "^7.21.4",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
-    "gh-pages": "^5.0.0",
     "style-loader": "^3.3.2",
     "webpack": "^5.79.0",
-    "webpack-dev-server": "^4.13.2"
-  },
-  "devDependencies": {
+    "webpack-dev-server": "^4.13.2",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.5",
     "webpack-cli": "^5.0.1"
